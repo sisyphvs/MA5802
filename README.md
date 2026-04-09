@@ -8,8 +8,8 @@ Resúmenes y apuntes de clase en LaTeX para el curso "Introducción a los Sistem
 
 ## Contenido
 
-- **C1** - Capítulo 1
-- **C2** - Capítulo 2
+- **C1** - Control 1
+- **C2** - Control 2
 
 ## Compilación en VS Code
 
