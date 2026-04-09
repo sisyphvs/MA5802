@@ -1,0 +1,59 @@
+\shorthandoff{"}
+
+\section{Introducción}
+\hrule
+
+\mydef (Sistema Dinámico Abstracto):\\
+Sea \((X,\mathcal{B},\mu)\) un espacio de medida de probabilidad, y 
+\(T: X \rightarrow X\) una función \(\mathcal{B}-\mathcal{B}\) medible, 
+\textit{biyectiva} y \(T\mu = \mu\) (i.e., \textit{preserva la medida}), donde
+
+\[
+T\mu (B) = \mu (T^{-1}(B)) = \mu (B), \quad B \in \mathcal{B}.
+\]
+
+Se dice que \((X,\mathcal{B},\mu,T)\) es un \textit{sistema dinámico abstracto} (s.d.a.) 
+o un \textit{sistema dinámico que preserva la medida} \(\mu\) (s.p.m.).
+
+\mydef (Factor o Extensión):\\
+Se dice que el s.d.a. \((Y,\mathcal{A},\nu,S)\) es \textit{factor} del s.d.a. 
+\((X,\mathcal{B},\mu,T)\) (o que \((X,\mathcal{B},\mu,T)\) es una \textit{extensión} de 
+\((Y,\mathcal{A},\nu,S)\)) ssi \(\exists \psi : X \rightarrow Y\), 
+\(\mathcal{B}-\mathcal{A}-\)medible, sobreyectiva tal que \(\psi \mu = \nu\) (i.e., 
+\(\psi\mu(A) = \mu(\psi^{-1}(A))=\nu(A)\), con \(A \in \mathcal{A}\)) y 
+\(S \circ \psi = \psi \circ T\).
+
+% Figura que se puede borrar
+\[
+\begin{tikzcd}
+X \arrow[r, "T"] \arrow[d, "\psi"] & X \arrow[d, "\psi"] \\
+Y \arrow[r, "S"]                   & Y
+\end{tikzcd}
+\]
+
+\mydef (Conjugación o Isomorfía):\\
+Se dice que los s.d.a. son \textit{isomorfos} ssi \(\psi\) es biyectiva y 
+\textit{bi}-medible (i.e., \(\psi\) y \(\psi^{-1}\) son medibles).
+
+\myex (Rotación Irracional):\\
+Sean
+\begin{itemize}
+    \item \(X = \mathbb{S}^1 = \{z \in \mathbb{C}: |z|=1\}\).
+    \item \(\alpha \in \mathbb{R}\setminus\mathbb{Q}\).
+    \item \(T:X \rightarrow X,\,z \mapsto T(z) = e^{i2\pi\alpha}\cdot z\).
+\end{itemize}
+
+Si \(\mathcal{B}(X)\) es la \(\sigma-\)álgebra de los borelianos de \(X\) y \(\mu\)
+es la medida uniforme en \(\mathbb{S}^1\) (o de Haar, o de Lebesgue) se tiene que 
+\((X,\mathcal{B},\mu,T)\) es un s.d.a.
+
+\section{Recurrencia}
+\hrule
+
+\myteo (Poincaré Débil):\\
+Si \((X,\mathcal{B},\mu,T)\) es s.d.a. y \(B \in \mathcal{B}\) con \(\mu(B)>0\),
+entonces existe \(n>1\) tal que 
+
+\[
+\mu(B \cap T^{-n}B) = \mu(\{x \in B: T^nB \in B\})>0.
+\]

@@ -1,0 +1,78 @@
+\documentclass[twocolumn]{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[spanish,es-lcroman]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} % para generar texto de prueba
+\usepackage{xcolor} % Para el color
+\usepackage{parskip} % Para quitar la sangría de los párrafos
+\usepackage{fancyhdr}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{tikz-cd}
+
+\usepackage{eso-pic} % Permite colocar elementos absolutos en la página
+
+\pagestyle{fancy}
+
+\setlength{\headsep}{7pt}
+
+\input{commands}
+
+\title{\textbf{Resumen MA5802}}
+\author{$\,$}
+\date{$\,$}
+
+\fancyhf{}
+\lhead[\leftmark]{
+Facultad de Ciencias Físicas y Matemáticas
+}
+\rhead{
+Universidad de Chile
+}
+
+\cfoot{\thepage}
+
+%-----------------------------------------------------------
+\begin{document}
+
+\twocolumn[
+
+\textbf{Departamento de Ingeniería Matemática\\
+MA5802 - Introducción a los Sistemas Dinámicos y la Teoría Ergódica\\
+Profesores:} Alejandro Maass S., Sebastián Donoso F.\\
+\textbf{Autor:} Javier Cruz\\
+
+
+% Colocar imagen en la esquina superior derecha (ajusta las coordenadas si es necesario)
+\AddToShipoutPictureBG*{%
+  \put(\LenToUnit{\paperwidth - 5.25cm},\LenToUnit{\paperheight - 3.1cm}){%
+    \includegraphics[width=3.25cm]{img/fcfm2.pdf}%
+  }%
+}
+
+\begin{center}
+    \textbf{\LARGE Resumen Control 2}
+\end{center}
+\vspace{0.6cm}
+]
+
+\input{recuerdo}
+
+\end{document}

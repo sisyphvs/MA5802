@@ -1,0 +1,34 @@
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.out
+*.pdf
+*.dvi
+*.ps
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporal files
+*.tmp
